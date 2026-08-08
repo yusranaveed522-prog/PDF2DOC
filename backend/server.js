@@ -184,7 +184,7 @@ app.post("/api/convert", upload.single("pdf"), async (req, res) => {
     console.log("Input:", inputPath);
     console.log("Output:", outputPath);
 
-    const pythonProcess = spawn("python", [
+    const pythonProcess = spawn("python3", [
       pythonScript,
       inputPath,
       outputPath,
